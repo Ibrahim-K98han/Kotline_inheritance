@@ -1,5 +1,3 @@
 package store
 
-data class StoreKeeper(
-
-)
+data class StoreKeeper(val name:String, val phone:String)
