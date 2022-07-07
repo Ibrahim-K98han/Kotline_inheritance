@@ -1,5 +1,5 @@
 package model
 
-class Employee {
+class Employee(val name:String, val id:Long) {
 
 }
