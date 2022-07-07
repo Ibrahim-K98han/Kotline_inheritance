@@ -8,7 +8,7 @@ fun main() {
     val hse = HourlySalaryEmployee("Hasan",45L,10,50)
     val cse = ComissionSalaryEmployee("Tomal",78L,10000.0,1000.0)
 
-    println(bse.calculateSalary())
-    println(hse.calculateSalary())
-    println(cse.calculateSalary())
+    println("$bse - ${bse.calculateSalary()}")
+    println("$hse - ${hse.calculateSalary()}")
+    println("$cse - ${cse.calculateSalary()}")
 }

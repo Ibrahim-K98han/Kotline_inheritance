@@ -8,5 +8,9 @@ class ComissionSalaryEmployee(
     val commissionRate:Double = 2.5
 ):Employee(name,id) {
     override fun calculateSalary() = salary + (totalSale * commissionRate)/100
+    override fun toString(): String {
+        return "${super.toString()}ComissionSalaryEmployee(salary=$salary, totalSale=$totalSale, commissionRate=$commissionRate)"
+    }
+
 
 }
