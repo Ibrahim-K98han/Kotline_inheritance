@@ -1,5 +1,5 @@
 package model
 
-class Employee(val name:String, val id:Long) {
-
+abstract class Employee(val name:String, val id:Long) {
+    abstract fun calculateSalary():Double
 }
