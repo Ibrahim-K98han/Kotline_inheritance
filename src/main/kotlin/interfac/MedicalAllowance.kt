@@ -1,0 +1,4 @@
+package interfac
+
+interface MedicalAllowance {
+}
