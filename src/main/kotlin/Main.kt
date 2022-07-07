@@ -1,3 +1,4 @@
+import interfac.FoodAllowance
 import model.BaseSalaryEmployee
 import model.ComissionSalaryEmployee
 import model.Employee
@@ -14,15 +15,19 @@ fun main() {
 
     val employees:List<Employee> = listOf(bse,hse,cse)
     for(employee in employees){
+        if (employee is FoodAllowance){
+            employee.payFoodAllowance()
+        }
+    }
+    /*for(employee in employees){
         val manager = SalaryManager(employee)
         println("$employee - ${manager.pay()}")
-    }
+    }*/
 
-    /*println("$bse - ${bse.calculateSalary()}")
-    println("$hse - ${hse.calculateSalary()}")
-    println("$cse - ${cse.calculateSalary()}")*/
 }
 
 class SalaryManager(val employee: Employee){
     fun pay() = employee.calculateSalary()
 }
+
+class AllowanceManager()
